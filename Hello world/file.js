@@ -1,10 +1,12 @@
 const fs=require('fs');
+const os=require('os')
+console.log(os.cpus().length)
 
 
-//using sync
+//using sync Blocking request
 fs.writeFileSync('./test.txt','This file was created by asynchronous write file')
 
-//using async
+//using async non blocking request
 fs.writeFile('./test2.txt','Hello ji from asyncronous write function',(err)=>{})
 
 //read using synnc function
@@ -47,3 +49,7 @@ fs.cpSync("./test.txt","test2.txt")
 
 //stats of an file
  console.log( fs.statSync('./test.txt'))
+
+ //Deafault thread pool size=4
+
+ // we should always write a code that is non blocking(asynchronous code)

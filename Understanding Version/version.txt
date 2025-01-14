@@ -1,0 +1,19 @@
+
+
+Suppose we are working on Version of
+
+"^4.21.2"
+
+Here on this Version of express each number has its own differnt story
+
+1.The last number 2 here indicates basic minor upadtes maybe typos and if we do not install them then also we can use express without any flow
+
+
+2.The second last number 21 here indicates that some major upadates or features are added and we need to upadate them in order to use Express effectivlyand these upadation are recomended for user 
+
+3.The third last number (4) here indicates that the whole version have been upgraded and does not recommend to downlaod it in a existing project.if you are using the updated version of the express the start the project from scratch or always use it in an existing project.
+
+4.The symbol (^) tells the compiler to downlaod the new version of the package but do not download the package if the number 4 is changed or new version has been introduced it prevennts from downlaoding the new version.
+
+
+5.the symbol(~) tells the compiler to donot download the second number of the version making it constant .
